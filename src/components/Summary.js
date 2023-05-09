@@ -2,7 +2,7 @@ import { Stack } from '@twilio-paste/stack';
 import SummaryLine from './SummaryLine';
 import { toCurrency } from '../utilities';
 
-export const Summary = ({ subtotal = 0, tipAmount = 0, total = 0 }) => {
+export const Summary = ({ subtotal = 0, tipAmount = 0, total = 0, items }) => {
   return (
     <Stack orientation="vertical" spacing="space30">
       <SummaryLine title="Subtotal">{toCurrency(subtotal)}</SummaryLine>
