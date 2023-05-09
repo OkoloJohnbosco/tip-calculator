@@ -15,7 +15,7 @@ export const NewItemForm = ({ onSubmit }) => {
     event.preventDefault();
 
     if (typeof onSubmit === 'function') {
-      onSubmit(name, price);
+      onSubmit({ name, price });
     }
 
     setName('');
